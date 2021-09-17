@@ -1,0 +1,24 @@
+Runtimes
+
+Extralargearray
+insert: 1.294400559 s
+append: 12.115473 ms
+
+Tinyarray
+insert: 38.834 μs
+append: 98.67 μs
+
+Smallarray
+insert: 53.522 μs
+append: 143.556 μs
+
+Mediumarray
+insert: 193.154 μs
+append: 165.903 μs
+
+Largearray
+insert: 9.978573 ms
+append: 653.982 μs
+
+Summary
+At first using unshift is faster until you get to the medium array then it starts to become slower and slower. Both of the functions time complexity is the same O(n) but using push scales better in the long run. This is because eventually youll get bigger and bigger arrays so using push would be more beneficial to you for time. This would make your website way quicker and more efficient.
