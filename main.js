@@ -9,3 +9,16 @@ findLongestWord = (arr) => {
 };
 
 findLongestWord(["cats", "elephant", "pig"]);
+
+hasUniqueChars = (str) => {
+    let obj = {}
+    for(let i = 0; i < str.length; i++){
+        let ch = str[i]
+        if(obj[ch]) return false
+        obj[ch] = true
+    }
+    return true
+}
+
+
+console.log(hasUniqueChars("Monday"))
